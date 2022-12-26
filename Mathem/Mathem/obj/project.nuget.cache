@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "fLFLrQNSHMKyj9/gKD7tBu/JJvdlda1Bl9Ld1JzAqAJEAwisGlmyGxnIxikn5zemPvkD67uvaqlCMc7HrEC9Mg==",
+  "success": true,
+  "projectFilePath": "C:\\BACKED\\REPO\\Lab\\Mathem\\Mathem\\Mathem\\Mathem.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\adam\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\adam\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512",
+    "C:\\Users\\adam\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
