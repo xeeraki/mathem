@@ -11,6 +11,6 @@ namespace Entities.Models
     {
         public int postalCode { get; set; }
         public DateTimeOffset? deliveryDate { get; set; }
-        public bool isGreenDelivery { get; set; }
+        public bool? isGreenDelivery { get; set; }
     }
 }

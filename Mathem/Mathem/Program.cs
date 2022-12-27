@@ -59,7 +59,7 @@ foreach (var datesList in validDeliveryDates.Values)
    
     }
 }
-
+//var order = dictionary.OrderBy(key => key.Value == true && startDate <= key.Key && key.Key <= endDate);
 foreach (var date in dictionary.OrderByDescending(key => key.Value == true &&
         (startDate <= key.Key && key.Key <= endDate)))
 {

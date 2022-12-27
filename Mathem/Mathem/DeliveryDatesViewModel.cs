@@ -11,12 +11,13 @@ namespace Mathem
             var endDate = startDate.AddDays(14);
             //for external product
             var startDate2 =startDate.AddDays(5);
-            //check current week
-            var startOfweek = startDate.DayOfWeek;
-            var endOfweek = DayOfWeek.Sunday;
-            var currentWeek = startOfweek - endOfweek;
-            //for currentweek
+            //check current week for temporary products
+            int startOfweek = (int)startDate.DayOfWeek;
+            int currentWeek = startOfweek - (int)DayOfWeek.Monday;
+            //returns start of current week
             var startDate3 = startDate.AddDays(-currentWeek);
+            //end of current week
+            var endDate3 = startDate3.AddDays(6);
 
 
             foreach (var product in products)
@@ -50,7 +51,7 @@ namespace Mathem
 
                 if (product.productType == "temporary")
                 {
-                    var date = Enumerable.Range(0, 1 + endDate.Subtract(startDate3).Days)
+                    var date = Enumerable.Range(0, 1 + endDate3.Subtract(startDate3).Days)
                     .Select(offset => startDate3.AddDays(offset))
                     .ToList();
                     if (dictionary.ContainsKey(postalCode))

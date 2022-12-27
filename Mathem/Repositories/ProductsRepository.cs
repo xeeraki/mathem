@@ -12,7 +12,7 @@ namespace Repositories
 
                     new Products{ productId = "1",
                     productName = "apple",
-                    productType = "normal",
+                    productType = "temporary",
                     deliveryDays = new List<string>{"Monday","Tuseday", "Wednesday","Thurseday",
                         "Friday","Sutreday", "Sunday"},
                     daysInAdvance = 0,
@@ -42,7 +42,7 @@ namespace Repositories
 
                     new Products{ productId = "3",
                     productName = "milk",
-                    productType = "normal",
+                    productType = "external",
                     deliveryDays = new List<string>{"Monday","Tuseday", "Wednesday","Thurseday",
                         "Friday","Sutreday", "Sunday"},
                     daysInAdvance = 5,
@@ -52,13 +52,14 @@ namespace Repositories
 
                     new Products{ productId = "5",
                     productName = "Meet",
-                    productType = "normal",
+                    productType = "external",
                     deliveryDays = new List<string>{"Monday","Tuseday", "Wednesday","Thurseday",
                         "Friday","Sutreday", "Sunday"},
                     daysInAdvance = 5,
                     price = 3,
                     quantity = 1,
                     },
+
             };
        
             return products;
